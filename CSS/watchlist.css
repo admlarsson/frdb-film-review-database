@@ -1,0 +1,204 @@
+/* Grundläggande body */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f3f3f3;
+  font-family: "Arial Black", "Impact", "Helvetica Neue", Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Container för sidan */
+.watchlist-container {
+  padding: 40px 80px;
+  background-color: #1d6fb7;
+  min-height: 100vh;
+}
+
+/* Headerbox */
+.watchlist-header-box {
+  background-color: #105b9d;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+/* Header text */
+.watchlist-header .section-title {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 0 10px;
+  border-left: 4px solid white;
+  padding-left: 10px;
+}
+
+.watchlist-subtitle,
+.watchlist-intro {
+  color: #d0e6f7;
+  font-size: 14px;
+  margin: 5px 0;
+  text-transform: none;
+}
+
+/* Grid med kort (vertikal lista) */
+.watchlist-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Varje kort */
+.watchlist-card {
+  min-height: 120px;
+  display: flex;
+  gap: 20px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Posterbild */
+.watchlist-poster {
+  width: 100px;
+  border-radius: 4px;
+  object-fit: cover;
+  
+}
+
+/* Detaljer bredvid bilden */
+.watchlist-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Meta info - titel och rank */
+.watchlist-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.watchlist-rank {
+  color: #777;
+}
+
+.watchlist-title {
+  color: #000;
+  text-transform: none;
+}
+
+/* Betyg */
+.watchlist-score {
+  color: #f5c518;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.watchlist-score .user-rating {
+  color: #3399ff;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: default;
+}
+
+.watchlist-score .star {
+  font-size: 18px;
+}
+
+/* År info */
+.watchlist-year {
+  font-size: 13px;
+  color: #666;
+  margin-top: 4px;
+  text-transform: none;
+}
+
+/* Beskrivning */
+.watchlist-description {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+  text-transform: none;
+}
+
+/* Actions - knappar och formulär */
+.watchlist-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+/* Ta bort knapp */
+.remove-button, .rate-button-inline {
+  padding: 6px 14px;
+  font-weight: 700;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: none;
+  border: none;
+  font-family: "Arial Black", "Impact", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.remove-button {
+  background-color: #a30000;
+  color: white;
+}
+
+.remove-button:hover {
+  background-color: #7e0000;
+}
+
+/* Betygs-knapp */
+.rate-button-inline {
+  background-color: #f5c518;
+  color: black;
+}
+
+.rate-button-inline:hover {
+  background-color: #e4b700;
+}
+
+/* Inline rating-form */
+.inline-rate-form {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+/* Inputfält för rating */
+.inline-score-input {
+  width: 50px;
+  padding: 6px 8px;
+  font-weight: bold;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Transparent star för rating */
+.transparent-star {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}

@@ -1,0 +1,121 @@
+.weather-forecast {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+  }
+  
+  .weather-day {
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .weather-day:last-child {
+    border-bottom: none;
+  }
+  
+  .weather-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .weather-date-icon {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: bold;
+  }
+  
+  .weather-info {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+  }
+  
+  .weather-date {
+    font-weight: bold;
+    font-size: 13px;
+  }
+  
+  .weather-icon {
+    font-size: 18px;
+  }
+  
+  .weather-temp,
+  .weather-rain {
+    color: #333;
+    white-space: nowrap;
+    font-size: 13px;
+  }
+  
+  .separator {
+    color: #999;
+  }
+  
+  /* Rekommendation-rutan */
+  .recommendation-box {
+    margin-top: 20px;
+    background-color: #f8f9fa;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .recommendation-box img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+  
+  .recommendation-box h4 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 4px;
+  }
+  
+  .recommendation-box p {
+    font-size: 14px;
+  }
+  
+  .weather-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+  }
+  
+  .weather-title {
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid #1d6fb7;
+    padding-bottom: 4px;
+    margin: 0;
+  }
+  
+  .weather-location {
+    font-size: 10px;
+    color: #999;
+    font-style: italic;
+    text-transform: uppercase;
+    position: relative;
+    top: 2px;
+  }
+
+  .recommendation-link {
+    display: inline-block;
+    text-decoration: none;  /* Tar bort understrykning */
+    color: inherit;         /* Ärver textfärgen från föräldern, alltså vanlig textfärg */
+    cursor: pointer;
+  }
+  
+  .recommendation-link:hover {
+    opacity: 0.85;
+    text-decoration: none; /* Inget understrykning vid hover heller */
+  }
+  
+  
+  

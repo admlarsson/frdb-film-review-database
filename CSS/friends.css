@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1d6fb7;
+    font-family: "Arial Black", "Impact", "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: white;
+    min-height: 100vh;
+  }
+  
+  .friends-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px 40px;
+    background-color: #105b9d; /* mörkblå bakgrund */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  h1, h2 {
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 900;
+    border-left: 5px solid white;
+    padding-left: 12px;
+  }
+  
+  .friend-requests, .add-friend-section {
+    margin-bottom: 30px;
+  }
+  
+  .friend-requests ul,
+  .friend-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .friend-requests li, 
+  .friend-list li {
+    background-color: #1c1c1c;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    text-transform: none; /* visa normal text här */
+    color: #d0d0d0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  }
+  
+  .friend-requests li form button {
+    margin-left: 10px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+    color: white;
+  }
+  
+  .friend-requests li form button[value="accept"] {
+    background-color: #28a745; /* grön */
+  }
+  
+  .friend-requests li form button[value="accept"]:hover {
+    background-color: #218838;
+  }
+  
+  .friend-requests li form button[value="decline"] {
+    background-color: #dc3545; /* röd */
+  }
+  
+  .friend-requests li form button[value="decline"]:hover {
+    background-color: #c82333;
+  }
+  
+  .friend-list li {
+    font-size: 16px;
+    color: #cbd5e0;
+    cursor: default;
+  }
+  
+  .friends-ratings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .rating-card {
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    color: #e0e0e0;
+  }
+  
+  .rating-poster {
+    width: 70px;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+  
+  .rating-info {
+    flex: 1;
+    font-weight: normal;
+    text-transform: none;
+  }
+  
+  .rating-info strong {
+    font-weight: 700;
+    color: #f5c518;
+  }
+  
+  .confirmation-message {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    text-align: center;
+    user-select: none;
+  }
+  
+  .add-friend-section label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-transform: none;
+  }
+  
+  .add-friend-section input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+  
+  .add-friend-section button {
+    background-color: #105b9d;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+  }
+  
+  .add-friend-section button:hover {
+    background-color: #0d4f8a;
+  }
+  
+  
+  

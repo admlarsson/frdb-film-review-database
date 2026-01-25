@@ -1,0 +1,66 @@
+.admin-page {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #f3f3f3;
+  }
+  
+  .admin-page .admin-container {
+    padding: 40px;
+    max-width: 1000px;
+    margin: 100px auto 40px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-page .admin-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #1d6fb7;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .admin-page .admin-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .admin-page .admin-table th,
+  .admin-page .admin-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .admin-page .admin-table th {
+    background-color: #1d6fb7;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .admin-page .admin-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .admin-page .admin-table select {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .admin-page .delete-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .admin-page .delete-btn:hover {
+    background-color: #c9302c;
+  }
+  

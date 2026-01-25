@@ -1,0 +1,166 @@
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+
+.topbar {
+    font-family: "Arial Black", "Impact", "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #105b9d;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 40px;
+    padding-right: 20px ;
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-bottom: 10px;
+  }
+  
+  .topbar-left,
+  .topbar-center,
+  .topbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .topbar-left {
+    flex-shrink: 0;
+  }
+  
+  .topbar-center {
+    flex: 5;
+    justify-content: center;
+  }
+  
+  .topbar-right {
+    flex-shrink: 0;
+    gap: 10px;
+  }
+  
+  .topbar-left .logo {
+    padding: 0;
+    height: 100%; /* Mindre storlek */
+    max-height: 90px;
+    width: auto;
+    object-fit: contain;
+    
+  }
+  
+  .search-input {
+    width: 800px;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+  }
+  
+  .topbar-button {
+    background-color: #1d6fb7;
+    color: white;
+    padding: 6px 14px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  /* Profilikon justering */
+.profile-icon {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-left: 10px;
+  transition: transform 0.2s ease;
+}
+
+.profile-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Dropdownmeny */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 38px; /* lite under ikonen */
+  right: 0;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  z-index: 999;
+  border-radius: 4px;
+  overflow: hidden;
+  font-weight: normal;
+}
+
+/* Menyalternativ */
+.dropdown-menu a {
+  color: #333;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+  font-size: 13px;
+  text-transform: none;
+  font-weight: 400;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f9f9f9;
+}
+
+/* Container för profilikon */
+.profile-dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.profile-name {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 5px;
+  text-transform: none;
+}
+
+.profile-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.profile-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.profile-dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 10px;
+}
+
+.profile-name {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: none;
+  user-select: none;
+}
+
+

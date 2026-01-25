@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f3f3f3;
+  font-family: "Arial Black", "Impact", "Helvetica Neue", Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.ratings-container {
+  padding: 40px 80px;
+  background-color: #1d6fb7;
+  min-height: 100vh;
+}
+
+.ratings-header-box {
+  background-color: #105b9d;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+.ratings-header .section-title {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 0 10px;
+  border-left: 4px solid white;
+  padding-left: 10px;
+}
+
+.ratings-subtitle,
+.ratings-description {
+  color: #d0e6f7;
+  font-size: 14px;
+  margin: 5px 0;
+  text-transform: none;
+}
+
+.rating-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rating-card {
+  min-height: 120px;
+  display: flex;
+  gap: 20px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.rating-poster {
+  width: 100px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.rating-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rating-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.rating-rank {
+  color: #777;
+}
+
+.rating-title {
+  color: #000;
+  text-transform: none;
+}
+
+.rating-score {
+  color: #3399ff;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rating-date {
+  font-size: 13px;
+  color: #666;
+  margin-top: 4px;
+  text-transform: none;
+}
+
+.rating-description {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+  text-transform: none;
+}
+
+.rating-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.remove-button {
+  background-color: #a30000;
+  color: white;
+  padding: 6px 14px;
+  font-weight: 700;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: none;
+  border: none;
+  font-family: "Arial Black", "Impact", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.remove-button:hover {
+  background-color: #7e0000;
+}

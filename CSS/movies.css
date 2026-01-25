@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1d6fb7; /* Din blå bakgrund */
+  font-family: "Arial Black", "Impact", "Helvetica Neue", Helvetica, sans-serif;
+  color: white;
+  text-transform: none;
+}
+
+.movie-detail-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #105b9d; /* Mörkare blå ruta */
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.movie-detail-poster {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+
+.movie-info-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.movie-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 4px;
+  color: white;
+}
+
+.movie-subtitle {
+  font-size: 1.1rem;
+  color: #a8c9ff;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.movie-rating {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #f5c518; /* IMDb-gul */
+  margin-bottom: 20px;
+}
+
+.movie-rating .star {
+  font-size: 1.4rem;
+  margin-right: 6px;
+}
+
+.movie-description {
+  font-size: 1rem;
+  color: #dce7ff;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.add-watchlist-btn-large {
+  background-color: #f5c518;
+  color: #111;
+  border: none;
+  padding: 14px 32px;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  max-width: 200px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  box-shadow: 0 5px 15px rgba(245,197,24,0.6);
+}
+
+.add-watchlist-btn-large:hover {
+  background-color: #d4af37;
+}
+
+@media (max-width: 768px) {
+  .movie-detail-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .movie-detail-poster {
+    width: 80%;
+    max-width: 320px;
+    margin-bottom: 20px;
+  }
+
+  .movie-info-wrapper {
+    width: 90%;
+  }
+}
+
+.add-watchlist-btn-large.added {
+  background-color: #4caf50; /* grön knapp när tillagd */
+  color: white;
+  cursor: default;
+  box-shadow: none;
+}
+
+.confirmation-message {
+  max-width: 900px;
+  margin: 20px auto 0;
+  padding: 12px 20px;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  font-size: 1rem;
+}
+
