@@ -11,4 +11,4 @@ The application integrates external APIs (TMDb for movie data and Open-Meteo for
 ![Weather-based recommendation](screenshots/profile.png)
 
 ---
-*Developed by Adam Larsson, Filip Sundberg, and Teodor Tjernberg.*
+*Developed by David Palmér, Adam Larsson, Filip Sundberg, and Teodor Tjernberg.*
